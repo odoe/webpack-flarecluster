@@ -36,7 +36,8 @@
     "lint": "tslint --fix \"src/**/*.ts?(x)\""
   },
   "dependencies": {
-    "@arcgis/webpack-plugin": "~4.17.3"
+    "@arcgis/webpack-plugin": "~4.17.3",
+    "dojox": "^1.16.3"
   },
   "arcgis": {
     "type": "jsapi"

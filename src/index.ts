@@ -5,6 +5,10 @@ import ArcGISMap from "esri/Map";
 import DictionaryRenderer from "esri/renderers/DictionaryRenderer";
 import MapView from "esri/views/MapView";
 
+import {FlareClusterLayer} from "./libs/FlareClusterLayer";
+
+console.log(FlareClusterLayer);
+
 /**
  * Initialize application
  */

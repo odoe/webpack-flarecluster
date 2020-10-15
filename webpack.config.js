@@ -8,7 +8,7 @@ const path = require("path");
 
 module.exports = {
   entry: {
-    index: ["./src/index.ts"]
+    index: ["./src/css/main.scss", "./src/index.ts"]
   },
   output: {
     filename: "[name].[chunkhash].js",
@@ -74,9 +74,9 @@ module.exports = {
     new CleanWebpackPlugin(),
 
     new ArcGISPlugin({
-      features: {
-        '3d': false
-      },
+      options: {
+        loaderConfig: require("./loaderConfig")
+      }
     }),
 
     new HtmlWebPackPlugin({
